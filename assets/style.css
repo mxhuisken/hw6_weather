@@ -1,3 +1,78 @@
+body{
+    background-color: rgb(233, 222, 208);
+    color: rgb(100, 92, 88);
+}
+
+/* main container */
+
+.mainContainer {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* search section */
+
 .left-search{
-    background-color: #e3dac9;
+    margin: 20px;
+}
+
+/* search box */
+
+/* search history */
+
+
+
+/* right side */
+
+.rightside{
+    margin-left: 50px;
+    justify-content: center;
+}
+
+/* greeting */
+
+/* current weather */
+
+.currentContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.currentBoxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* future container */
+
+.futureContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 50px;
+}
+
+.eachCard {
+    border-radius: 25px;
+    width: 155px;
+    height: 265px;
+    margin: 10px;
+    background: tan;
+    background: tan;
+    background: linear-gradient(90deg, rgba(168, 148, 127, 0.584) 100%, rgba(114, 91, 72, 0.761) 100%); 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
