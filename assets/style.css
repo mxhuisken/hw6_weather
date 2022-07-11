@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200&family=Zen+Loop&display=swap');
+
+*{
+    font-family: 'Albert Sans', sans-serif;
+}
+
 body{
     background-color: rgb(233, 222, 208);
     color: rgb(100, 92, 88);
@@ -15,11 +21,18 @@ body{
 
 .left-search{
     margin: 20px;
+    background-color: antiquewhite;
+}
+
+.userInput{
 }
 
 /* search box */
 
 /* search history */
+
+.history-container{
+}
 
 
 
@@ -32,14 +45,14 @@ body{
 
 /* greeting */
 
+.header{
+    padding: 15px;
+}
+
 /* current weather */
 
 .currentContainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px;
+    background-color: blanchedalmond;
 }
 
 .currentBoxes{
@@ -47,6 +60,16 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.currentStats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    text-align:center;
+    background-color: antiquewhite;
 }
 
 /* future container */
@@ -57,7 +80,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     align-self: center;
-    margin-top: 50px;
+    margin-top: 95px;
 }
 
 .eachCard {

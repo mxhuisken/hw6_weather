@@ -126,18 +126,18 @@ function getWeatherInfo(latitude, longitude){
             var dailyDt = data.daily[d].dt; 
             var dailyDtConvert = new Date(dailyDt * 1000);
             var dailyDtFormat = days[dailyDtConvert.getDay()];
-            var dailyLocalDate = dailyDtConvert.toLocaleDateString();
+            // var dailyLocalDate = dailyDtConvert.toLocaleDateString();
             var dailyWeather = data.daily[d].temp.max;
             var dailyIcon = data.daily[d].weather[0].icon;
             var futureHumidity = data.daily[d].humidity;
             var futureWind = data.daily[d].wind_speed;
+            // <div class="futureDay">${dailyLocalDate}</div>
 
             output += /*html*/ `
                 <div class="eachCard" id="futureContainer">
                     <div class="flex">  
                         <img class="dailyWeatherIcon"  src= "http://openweathermap.org/img/wn/${dailyIcon}@2x.png"alt= "Weather Icon">
                         <div class="futureDate">${dailyDtFormat}</div>
-                        <div class="futureDay">${dailyLocalDate}</div>
                         <div class="dailyTemp">${Math.ceil(dailyWeather)}°</div>
                         <div class="futureHumidity">Hum | ${futureHumidity}%</div>
                         <div class="futureWind"> Wind | ${Math.ceil(futureWind)} mph</div>
