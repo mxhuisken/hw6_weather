@@ -4,10 +4,7 @@
 
 - [Description](#description)
 - [Preview](#preview)
-- [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
 - [Links](#links)
 
 ## Description 📋
