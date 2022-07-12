@@ -169,7 +169,7 @@ function searchCity(event) {
     if (array.indexOf(searchValue) === -1){
         array.unshift(searchValue);
         //setting limit in localStorage
-            if(array.length > 2) {
+            if(array.length > 10) {
                 array.pop();
             }
 
@@ -226,7 +226,7 @@ var histBtn = document.getElementsByClassName('historyBtn');
 for (var b = 0; b < histBtn.length; b++) {
 	histBtn[b].addEventListener('click', function (event) {
 		var value = event.target.getAttribute('data-id');
-		getLocationWeather(value);
+		getWeather(value);
 	});
 }
 

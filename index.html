@@ -12,52 +12,67 @@
 
     <main class="mainContainer">
 
-    <section class='left-search'>
-        <form>
-            <input class= "userInput" type="text" placeholder="City Name...">
-            <button class="searchBtn">&#x1F50D;</button>
-        </form>
+        <section class='left-search'>
+            <form>
+                <input class= "userInput" id="userInput" type="text" placeholder="City Name...">
+                <button class="searchBtn">&#x1F50D;</button>
+            </form>
 
-        <div class="historyContainer" id="historyContainer"></div>
-    </section>
-
-
-    <div class="rightside">
-
-    <section class="header">
-        <div class="greeting"></div>
-        <div class="dayDate"></div>
-        <div class="currentTime"></div>
-    </section>
-
-    <section class="currentContainer">
-        <img src="" alt="Weather Icon" class="currentWeatherIcon">
-
-        <div class="currentBoxes">
-            <div class="currentBasics">
-                <div class="currentCity"></div>
-                <div class="currentDate"></div>
+            <div class="historyContainer" id="historyContainer">
+                <!-- <button class="historyBtn"></button>
+                <button class="removeBtn"></button> -->
             </div>
-            <div class="currentStats">
-                <div class="currentTemp"></div>
-                <div class="currentHumidity"></div>
-                <div class="currentWind"></div>
-                <div class="currentUVIndex"></div>
+
+        </section>
+
+
+        <div class="rightside">
+
+            <div class="topRight">
+
+                <section class="header">
+                    <div class="headerContent">
+                        <div class="greeting"></div>
+                        <div class="dayDate"></div>
+                        <div class="currentTime"></div>
+                    </div>
+                </section>
+
+                <section class="currentContainer">
+
+                    <div class="currentBoxes">
+
+                        <div class="currentColumn">
+                            <img src="" alt="Weather Icon" class="currentWeatherIcon">
+
+                            <div class="currentBasics">
+                                <div class="currentCity"></div>
+                                <div class="currentDate"></div>
+                            </div>
+                        </div>
+
+                        <div class="currentStats">
+                            <div class="currentTemp"></div>
+                            <div class="currentHumidity"></div>
+                            <div class="currentWind"></div>
+                            <div class="currentUVIndex"></div>
+                        </div>
+                    </div>
+
+                </section>
+
             </div>
+
+            <section class="futureContainer" id= "futureContainer">
+                <!-- <img src="" alt="Weather Icon" class="weatherIcon">
+                <div class="futureDate"></div>
+                <div class="futureDay"></div>
+                <div class="futureTemp"></div>
+                <div class="futureHumidity"></div>
+                <div class="futureWind"></div> -->
+            </section>
+
         </div>
-
-    </section>
-
-    <section class="futureContainer" id= "futureContainer">
-        <!-- <img src="" alt="Weather Icon" class="weatherIcon">
-        <div class="futureDate"></div>
-        <div class="futureDay"></div>
-        <div class="futureTemp"></div>
-        <div class="futureHumidity"></div>
-        <div class="futureWind"></div> -->
-    </section>
-
-    </div>
 
     </main>
 

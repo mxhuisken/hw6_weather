@@ -2,11 +2,12 @@
 
 *{
     font-family: 'Albert Sans', sans-serif;
+    color: black;
+    font-weight: 500;
 }
 
 body{
     background-color: rgb(233, 222, 208);
-    color: rgb(100, 92, 88);
 }
 
 /* main container */
@@ -19,22 +20,67 @@ body{
 
 /* search section */
 
+.searchHistory {
+    margin: 15px 0;
+}
+
 .left-search{
     margin: 20px;
-    background-color: antiquewhite;
 }
 
 .userInput{
+    background-color: transparent;
+    border-radius: 25px;
+    border: 1px solid #848484;
+	outline:0;
+	height:25px;
+	width: 115px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.searchBtn{
+    background-color: transparent;
+    border-radius: 25px;
+    border: 1px solid #848484;
+	outline:0;
+	height:25px;
+    width:35px;
+    padding-left:10px;
+	padding-right:10px;
 }
 
 /* search box */
 
 /* search history */
 
-.history-container{
+.historyBtn{
+    position: relative;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 200;
+    text-transform: capitalize;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    background: linear-gradient( 90deg, 
+      rgba(144, 127, 98, 0.372) 100%, 
+      rgba(148, 135, 113, 0.372)50%, 
+      rgba(98, 92, 83, 0.372)1%);
 }
 
+.historyBtn:hover{
+    transform: scale(1.1);
+    transition: all ease 500ms;
+}
 
+.removeBtn{
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    top: 1px;
+    right: 0px;
+}
 
 /* right side */
 
@@ -43,16 +89,49 @@ body{
     justify-content: center;
 }
 
+.topRight{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
 /* greeting */
 
 .header{
     padding: 15px;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 40px;
+    width: 500px;
+    height: 200px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, rgba(168, 148, 127, 0.584) 100%, rgba(114, 91, 72, 0.761) 100%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.headerContent{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.dayDate, .currentTime{
+    margin-top: 25px;
 }
 
 /* current weather */
 
 .currentContainer{
-    background-color: blanchedalmond;
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    background: linear-gradient(90deg, rgba(168, 148, 127, 0.584) 100%, rgba(114, 91, 72, 0.761) 100%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .currentBoxes{
@@ -60,6 +139,18 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: center;
+    font-size: 20px;
+}
+
+.currentWeatherIcon{
+    margin-left: 25px;
+}
+
+.currentBasics{
+    margin-left: 35px;
+    margin-right: 5px;
+    margin-top: 25px;
 }
 
 .currentStats{
@@ -69,7 +160,17 @@ body{
     flex-wrap: wrap;
     position: relative;
     text-align:center;
-    background-color: antiquewhite;
+    margin-left: 55px;
+}
+
+.currentColumn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    text-align:center;
+    text-transform: capitalize;
 }
 
 /* future container */
@@ -80,7 +181,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     align-self: center;
-    margin-top: 95px;
+    margin-top: 75px;
 }
 
 .eachCard {
@@ -88,8 +189,6 @@ body{
     width: 155px;
     height: 265px;
     margin: 10px;
-    background: tan;
-    background: tan;
     background: linear-gradient(90deg, rgba(168, 148, 127, 0.584) 100%, rgba(114, 91, 72, 0.761) 100%); 
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }

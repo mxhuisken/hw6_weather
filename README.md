@@ -12,17 +12,15 @@
 
 ## Description 📋
 
+Modern and minimalistic weather dashboard. Designed to show only the pertinent information about the weather such as current temperature, humidity, wind speed, UV index and future forecasts. Saves up to 10 searched cities at a time. 
+
 ## Preview 📸
 
-<p> <img src=""></p>
-
-## Installation 📥
+![Visual](./assets/images/weather.gif)
 
 ## Usage 🖥
 
-## Credits 🗂
-
-## License ⚙️
+User can favorite the deployed site to their browser to regularly visit and search the forecast of their desired city. 
 
 ## Links 💾
 
