@@ -1,6 +1,6 @@
 //global variables
 const onecallAPI = 'https://api.openweathermap.org/data/2.5/onecall';
-const geoAPI = 'http://api.openweathermap.org/geo/1.0/direct';
+const geoAPI = 'https://api.openweathermap.org/geo/1.0/direct';
 const APIkey = 'abc7f104744d16ea7952cba3fcc512dc';
 var lat;
 var lon;
